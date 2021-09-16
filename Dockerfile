@@ -10,8 +10,8 @@ COPY . $ROOTAPP
 
 # Grant permissions for to our scripts to be executable
 USER root
-RUN chmod +x /usr/config/entrypoint.sh && \
-    chmod +x /usr/config/configure-db.sh && \
+RUN chmod +x $ROOTAPP/entrypoint.sh && \
+    chmod +x $ROOTAPP/configure-db.sh && \
     chgrp -R 0 $ROOTAPP && \
     chmod -R g=u $ROOTAPP
 
