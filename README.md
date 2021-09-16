@@ -24,7 +24,7 @@ docker build . -t crzysan/mssql-docker:2019-latest
 ## Run the container
 ```
 docker run -d -p 1433:1433  crzysan/mssql-docker:2019-latest
-docker run --name mssqldev -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Passw0rd" -e "MSSQL_DB=mydb" -e "MSSQL_USER=myuser" -e "MSSQL_PASSWORD=Mypass1"-p 8433:1433 -d crzysan/mssqldocker:2019-latest
+docker run --name mssqldev -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Passw0rd" -e "MSSQL_DB=mydb" -e "MSSQL_USER=myuser" -e "MSSQL_PASSWORD=Mypass1"-p 1433:1433 -d crzysan/mssql-docker:2019-latest
 ```
 
 ## Connect to the container
