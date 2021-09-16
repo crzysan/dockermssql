@@ -28,4 +28,4 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: crzysan/mssqldocker:latest
+          tags: crzysan/mssql-docker:latest
