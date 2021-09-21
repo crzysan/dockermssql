@@ -15,7 +15,7 @@ RUN chmod +x $ROOTAPP/entrypoint.sh && \
     chgrp -R 0 $ROOTAPP && \
     chmod -R g=u $ROOTAPP
 
-USER 1001
+USER mssql
 WORKDIR $ROOTAPP
 
 
